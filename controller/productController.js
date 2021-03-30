@@ -28,6 +28,17 @@ module.exports.addNewProduct = async (req, res) => {
 };
 
 // Insert New Product
+module.exports.singleproduct = async (req, res) => {
+	await Product.findById(req.params.id).exec((err, product) => {
+		if (err) {
+			res.status(500).json(err);
+		} else {
+			res.status(200).json(product);
+		}
+	});
+};
+
+// Insert New Product
 module.exports.deleteProduct = async (req, res) => {
 	console.log(req.params.id);
 	await Product.deleteOne({ _id: req.params.id }, (err, data) => {
