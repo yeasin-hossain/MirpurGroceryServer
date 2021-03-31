@@ -21,5 +21,4 @@ const productSchema = Schema({
 	date: { type: Date, default: Date.now },
 });
 
-// const CatSchema = new Schema();
 module.exports = productSchema;

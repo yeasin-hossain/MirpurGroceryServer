@@ -40,7 +40,6 @@ module.exports.singleproduct = async (req, res) => {
 
 // Delete Product
 module.exports.deleteProduct = async (req, res) => {
-	console.log(req.params.id);
 	await Product.deleteOne({ _id: req.params.id }, (err, data) => {
 		if (err) {
 			res.status(500).json(err);

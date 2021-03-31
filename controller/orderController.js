@@ -39,3 +39,29 @@ module.exports.saveOrder = async (req, res) => {
 		}
 	});
 };
+
+// Delete Order Route
+module.exports.deleteOrder = async (req, res) => {
+	await Order.deleteOne({ _id: req.params.orderId }, (err, data) => {
+		if (err) {
+			res.status(500).json(err);
+		} else {
+			res.status(200).json(data);
+		}
+	});
+};
+
+// update and confirm order status
+module.exports.updateOrder = async (req, res) => {
+	await Order.updateOne(
+		{ _id: req.params.orderId },
+		{ status: 'confirm' },
+		(err, data) => {
+			if (err) {
+				res.status(500).json(err);
+			} else {
+				res.status(200).json(data);
+			}
+		}
+	);
+};
