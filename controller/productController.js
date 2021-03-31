@@ -27,7 +27,7 @@ module.exports.addNewProduct = async (req, res) => {
 	});
 };
 
-// Insert New Product
+// Get Single Product
 module.exports.singleproduct = async (req, res) => {
 	await Product.findById(req.params.id).exec((err, product) => {
 		if (err) {
@@ -38,7 +38,7 @@ module.exports.singleproduct = async (req, res) => {
 	});
 };
 
-// Insert New Product
+// Delete Product
 module.exports.deleteProduct = async (req, res) => {
 	console.log(req.params.id);
 	await Product.deleteOne({ _id: req.params.id }, (err, data) => {

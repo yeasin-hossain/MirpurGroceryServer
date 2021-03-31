@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const productSchema = mongoose.Schema({
+const productSchema = Schema({
+	_id: mongoose.Schema.Types.ObjectId,
 	name: {
 		type: String,
 		required: true,
@@ -20,4 +22,5 @@ const productSchema = mongoose.Schema({
 	date: { type: Date, default: Date.now },
 });
 
+// const CatSchema = new Schema();
 module.exports = productSchema;
