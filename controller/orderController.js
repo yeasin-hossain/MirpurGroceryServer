@@ -17,7 +17,6 @@ module.exports.getAllOrder = async (req, res) => {
 
 // Get All Product
 module.exports.getUserOrder = async (req, res) => {
-	console.log(req.params.useId);
 	await Order.find({ userId: req.params.useId })
 		.sort({ date: -1 })
 		.exec((err, orders) => {
