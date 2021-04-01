@@ -6,12 +6,12 @@
 
 ### Api Endpoint and request configuration
 
-`https://phassignment10.herokuapp.com/product`
+    https://phassignment10.herokuapp.com/product
 
-`router.get '/product'`
-`router.post '/addproduct'`
-`router.get '/deleteproduct/:id'`
-`router.get '/singleproduct/:id'`
+        router.get '/product'
+        router.post '/addproduct'
+        router.get '/deleteproduct/:id'
+        router.get '/singleproduct/:id'
 
      https://phassignment10.herokuapp.com/order
 
