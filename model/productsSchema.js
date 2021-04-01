@@ -11,7 +11,7 @@ const productSchema = Schema({
 		required: true,
 	},
 	weight: {
-		type: Number,
+		type: String,
 		required: true,
 	},
 	image: {
