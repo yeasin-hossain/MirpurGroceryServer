@@ -39,8 +39,8 @@ const orderSchema = mongoose.Schema({
 		default: 'pending',
 	},
 	date: {
-		type: Date,
-		default: Date.now,
+		type: String,
+		// default: Date.now,
 	},
 });
 

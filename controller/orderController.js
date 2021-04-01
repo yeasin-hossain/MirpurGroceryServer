@@ -31,6 +31,7 @@ module.exports.getUserOrder = async (req, res) => {
 // Insert New Order
 module.exports.saveOrder = async (req, res) => {
 	const orderData = new Order(req.body);
+	console.log(orderData);
 	await orderData.save((err, data) => {
 		if (err) {
 			res.status(500).json(err);
