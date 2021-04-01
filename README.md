@@ -13,10 +13,10 @@
 `router.get '/deleteproduct/:id'`
 `router.get '/singleproduct/:id'`
 
-`https://phassignment10.herokuapp.com/order`
+     https://phassignment10.herokuapp.com/order
 
-`router.post('/order'`
-`router.get('/allorder'`
-`router.get('/userorder/:useId'`
-`router.get('/deleteorder/:orderId'`
-`router.get('/updateorder/:orderId'`
+             router.post('/order'
+             router.get('/allorder'
+             router.get('/userorder/:useId'
+             router.get('/deleteorder/:orderId'
+             router.get('/updateorder/:orderId'
