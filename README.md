@@ -6,7 +6,7 @@
 
 ### Api Endpoint and request configuration
 
-    ` https://phassignment10.herokuapp.com/product `
+``` ` https://phassignment10.herokuapp.com/product `
 
             ` router.get '/product' `
             ` router.post '/addproduct' `
@@ -19,4 +19,4 @@
             ` router.get('/allorder' `
             ` router.get('/userorder/:useId' `
             ` router.get('/deleteorder/:orderId' `
-            ` router.get('/updateorder/:orderId' `
+            ` router.get('/updateorder/:orderId' ` ```
